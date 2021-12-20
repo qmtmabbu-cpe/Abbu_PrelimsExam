@@ -1,0 +1,11 @@
+---
+  - hosts: UbuntuS
+    become: True
+    vars:
+       username: "qmtmabbu09"
+       motd: "Ansible Managed node by qmtmabbu09"
+    roles:
+      - python
+      - java
+      - ChangeMOTD
+      - CreateUser
